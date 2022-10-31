@@ -17,9 +17,23 @@ function add23() {
   score2 += 3;
   drawScore2();
 }
+function remove532() {
+  score2 -= 53;
+  drawScore2();
+}
+function remove531() {
+  score1 -= 53;
+  drawScore1();
+}
 function reset() {
   score1 = 0;
   score2 = 0;
+  drawScore1();
+  drawScore2();
+}
+function add100() {
+  score1 += 100;
+  score2 += 100;
   drawScore1();
   drawScore2();
 }
