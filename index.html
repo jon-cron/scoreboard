@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Score</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-img align-content-center justify-content-center">
+    <header class="container-fluid">
+      <!-- SECTION Reset Button -->
+      <section class="row justify-content-end">
+        <div class="col-1"><button class="btn btn-primary" onclick="reset()">Reset</button></div>
+      </section>
+    </header>
+    <main class="container-fluid">
+      <section class="row justify-content-center">
+        <div class="col-8 card text-center">
+          <!-- SECTION Team names -->
+          <section class="row justify-content-center">
+            <div class="col-4"><h1>Team 1</h1></div>
+            <div class="col-4"><h1>Team 2</h1></div>
+          </section>
+          <!-- SECTION Scores -->
+          <section class="row justify-content-center">
+            <div id="Team1Score" class="col-4">0</div>
+            <div id="Team2Score" class="col-4">0</div>
+          </section>
+        </div>
+        </section>
+          <!-- SECTION Plus 1 buttons -->
+          <section class="row justify-content-evenly">
+            <div class="col-2">
+              <button class="btn btn-primary p-3 m-3" onclick="add1()">Team 1 +1</button>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary p-3 m-3" onclick="add21()">Team 2 +1</button>
+            </div>
+          </section>
+          <!-- SECTION Plus 3 buttons -->
+          <section class="row justify-content-evenly">
+            <div class="col-2">
+              <button class="btn btn-primary p-3 m-3" onclick="add3()">Team 1 +3</button>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary p-3 m-3" onclick="add23()">Team 2 +3</button>
+            </div>
+          </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
